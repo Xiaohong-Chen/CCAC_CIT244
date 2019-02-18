@@ -19,6 +19,7 @@ public class SecureLand {
     public static String[] addReqChars;
     public static String[] expandedArrays;
     
+    
     //creating a method of expanding arrays
     public static void setExpandArrays(String[] addArrays){
         
@@ -36,6 +37,7 @@ public class SecureLand {
     
     public static void main(String[] args){
         
+     
         //initializing the StrengthChecker Class
         StrengthChecker sc = new StrengthChecker();
      

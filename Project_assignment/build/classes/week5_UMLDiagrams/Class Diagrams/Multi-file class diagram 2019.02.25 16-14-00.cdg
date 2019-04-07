@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="ComputerComponent" package="timelineevent" visibility="public" xPosition="672.0" yPosition="263.0">
+      <Fields>
+        <Field name="modelNumber" type="int" visibility="package"/>
+        <Field name="releaseYear" type="int" visibility="package"/>
+        <Field name="retailPriceIn2018" type="double" visibility="package"/>
+        <Field name="manufacturer" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ComputerHardware" package="timelineevent" visibility="public" xPosition="529.0" yPosition="495.0">
+      <Fields>
+        <Field name="mostImportantSpecifications" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ComputerSystem" package="timelineevent" visibility="public" xPosition="827.0" yPosition="495.0">
+      <Fields>
+        <Field name="reasonOfchoosing" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="HumanInterest" package="timelineevent" visibility="public" xPosition="280.0" yPosition="263.0">
+      <Fields>
+        <Field name="creator" type="String" visibility="package"/>
+        <Field name="referenceSourceUrl" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TimelineEvent" package="timelineevent" visibility="public" xPosition="485.0" yPosition="19.0">
+      <Fields>
+        <Field name="year" type="int" visibility="package"/>
+        <Field name="description" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="timelineevent.ComputerComponent" target="timelineevent.TimelineEvent"/>
+    <IsRelation name="is" source="timelineevent.ComputerSystem" target="timelineevent.ComputerComponent"/>
+    <IsRelation name="is" source="timelineevent.ComputerHardware" target="timelineevent.ComputerComponent"/>
+    <IsRelation name="is" source="timelineevent.HumanInterest" target="timelineevent.TimelineEvent"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

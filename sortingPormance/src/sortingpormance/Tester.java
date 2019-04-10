@@ -23,8 +23,8 @@ public class Tester {
         int[] bubArrForRunTimes = arr.clone();
 
         //get the runtime of each sort algo    
-        long bt = displayRunTimes(b, bubArrForRunTimes);
-        long mt = displayRunTimes(m, merArrForRunTimes);
+        long bt = getRunTimes(b, bubArrForRunTimes);
+        long mt = getRunTimes(m, merArrForRunTimes);
         
         //display the result
         System.out.println("");
@@ -40,14 +40,11 @@ public class Tester {
         }
 
     }
-
-    public void testSort(String nameOfSort, Sorter s, int[] arrToSort) {
-
-        int[] afterSortArr = s.sort(arrToSort);
-        displayArr(nameOfSort, afterSortArr);
-
-    }
-
+    
+    /**
+     * @param arr primitives to be checked
+     * @return true if array was sorted
+     */
     public boolean checkSort(int[] arr) {
 
         boolean check = false;
@@ -62,7 +59,11 @@ public class Tester {
         }
         return check;
     }
-
+    
+    /**
+     * @param arrSize the size of the Array to be sorted
+     * @return  random Array
+     */
     public int[] getRanArr(int arrSize) {
 
         int[] randomArr = new int[arrSize];
@@ -75,8 +76,12 @@ public class Tester {
         return randomArr;
     }
 
-    public long displayRunTimes(Sorter s, int[] arrToSort) {
-
+    /**
+     * @param s sorter
+     * @param arrToSort Array to be sorted
+     * @return runtime
+     */
+    public long getRunTimes(Sorter s, int[] arrToSort) {
 
         long startTimes = java.time.Instant.now().toEpochMilli();
         s.sort(arrToSort);
@@ -87,6 +92,7 @@ public class Tester {
 
     }
 
+    
     public void displayArr(String nameOfSort, int[] sortedArr) {
         System.out.println("");
         System.out.println("--------------------------------------------------");

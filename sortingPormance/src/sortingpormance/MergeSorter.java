@@ -1,11 +1,15 @@
 package sortingpormance;
 
-/**
- *
- * @author xiaohong.chen
- */
+
 public class MergeSorter extends Sorter{
     
+    /**
+     * Implements the merge sort algo as defined
+     * by Daniel Liang in Edition 9 of Intro to Java Programming
+     * 
+     * @param arrToSort primitives to be sorted with merge sort
+     * @return the sorted array
+     */
     @Override
     public int[] sort(int[] arrToSort) {
         if (arrToSort.length > 1) {

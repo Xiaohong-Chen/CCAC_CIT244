@@ -3,41 +3,41 @@ package sortingpormance;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- *
- * @author seanc
- */
 public class Tester {
 
     Tester() {
-        
+        //prompt the user to input the specific size Array
         System.out.println("Input the Array Size you want to test: ");
         Scanner userInput = new Scanner(System.in);
         int arrSize = userInput.nextInt();
         
+        //get a random Array
         int[] arr = getRanArr(arrSize);
 
+        //initialize the Sorter
         Sorter b = new BubbleSorter();
         Sorter m = new MergeSorter();
 
+        //clone the array to be sorted
         int[] merArrForRunTimes = arr.clone();
         int[] bubArrForRunTimes = arr.clone();
 
-        //int[] arrForBubSort = arr.clone();
-        //int[] arrForMerSort = arr.clone();
-
-        //testSort("Bubble Sort", b, arrForBubSort);
-
-        //testSort("Merge Sort", m, arrForMerSort);
-        
+        //get the runtime of each sort algo    
         long bt = displayRunTimes(b, bubArrForRunTimes);
         long mt = displayRunTimes(m, merArrForRunTimes);
         
+        //display the result
         System.out.println("");
         System.out.println("Test case description:              " + arrSize + " value aray with random int values");
         System.out.println("Time performance for bubble sort:   " + bt);
         System.out.println("Time performance for merge  sort:   " + mt);
-        System.out.println("Describe the results of the test:   " );
+        if (bt<mt){
+            System.out.println("Describe the results of the test:   " +"Bubble Sort is faster than Merge Sort" );
+        }else if(bt>mt){
+            System.out.println("Describe the results of the test:   " +"Merge Sort is faster than Bubble Sort" );
+        }else{
+            System.out.println("Describe the results of the test:   " +"Trying with a bigger size Array");
+        }
 
     }
 

@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sortingpormance;
 
-/**
- *
- * @author xiaohong.chen
- */
+
 public class BubbleSorter extends Sorter {
+    
+    /**
+     * Implements the bubble sort algo as defined
+     * by Daniel Liang in Edition 9 of Intro to Java Programming
+     * 
+     * @param arrToSort primitives to be sorted with bubble sort
+     * @return the sorted array
+     */
 
     @Override
     public int[] sort(int[] arrToSort) {

@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>House System Window</title>
+        <h:outputStylesheet library="css" name="mainStyle.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet"></link>
+        <script>
+            
+            setInterval(function () {
+                document.getElementById("mainform:automaticButton").click();
+            }, 5000);
+
+        </script>
+    </h:head>
+
+    <h:body>
+        <h:form id="mainform">
+            <div class="houseSystem">
+                <!--House System Item Menu Container-->
+                <div class="houseSystemItemMenuContainer">
+
+                    <!--Menu Container Title-->
+                    <div class="Title">
+                        &nbsp;&nbsp;&nbsp;<i class="material-icons">home</i>&nbsp;&nbsp;&nbsp;House System
+                    </div>
+                    <!--User Information-->
+                    <div class="userInformation">
+                        
+                        <div class="userInformation_name">
+                            Xiaohong Chen
+                        </div>
+
+                    </div>
+
+                    <!--Account Information Item Button-->
+                    <div class="houseSystemItemButton">
+                        <div class="houseSystemItemButtonIcon">
+                            &nbsp;&nbsp;&nbsp;<i class="material-icons">account_circle</i> &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="houseSystemItemButtonName">
+                            Account Information
+                        </div>
+                    </div>
+
+                    <!--Windows System Item Button-->
+                    <div class="houseSystemItemButton">
+                        <div class="houseSystemItemButtonIcon">
+                            &nbsp;&nbsp;&nbsp; <i class="material-icons">view_module</i> &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="houseSystemItemButtonName">
+                            Windows System
+                        </div>
+                    </div>
+
+                    <!--Windows Shutter Item Button-->
+                    <div class="houseSystemItemButton">
+                        <div class="houseSystemItemButtonIcon">
+                            &nbsp;&nbsp;&nbsp;<i class="material-icons">reorder</i> &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="houseSystemItemButtonName">
+                            Shutter System
+                        </div>
+                    </div>
+
+                    <!--Alarming System Item Button-->
+                    <div class="houseSystemItemButton">
+                        <div class="houseSystemItemButtonIcon">
+                            &nbsp;&nbsp;&nbsp;<i class="material-icons">notifications</i> &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="houseSystemItemButtonName">
+                            Alarming System
+                        </div>
+                    </div>
+
+                    <!--Cooking System Item Button-->
+                    <div class="houseSystemItemButton">
+                        <div class="houseSystemItemButtonIcon">
+                            &nbsp;&nbsp;&nbsp;<i class="material-icons">restaurant</i> &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="houseSystemItemButtonName">
+                            Cooking System
+                        </div>
+                    </div>
+
+                    <!--Family System Item Button-->
+                    <div class="houseSystemItemButton">
+                        <div class="houseSystemItemButtonIcon">
+                            &nbsp;&nbsp;&nbsp;<i class="material-icons">group</i> &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="houseSystemItemButtonName">
+                            Family System
+                        </div>
+                    </div>
+
+                    <!--Security System Item Button-->
+                    <div class="houseSystemItemButton">
+                        <div class="houseSystemItemButtonIcon">
+                            &nbsp;&nbsp;&nbsp;<i class="material-icons">security</i> &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="houseSystemItemButtonName">
+                            Security System
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Weather Information Container-->
+                <div class="weatherInfoContainer">
+                    <!--Weather Information Container Title-->
+                    <div class="Title">
+                        &nbsp;&nbsp;&nbsp;<i class="material-icons">cloud_queue</i>&nbsp;&nbsp;&nbsp; Weather Information
+                    </div>
+                    <!--Content-->
+                    <div class="weatherInfoContent">
+                        <!--Weather Condition Information-->
+                        <div class="weatherInfoComponent">
+                            <div class="weatherInfoBox">
+                                <!--Weather Condition Title-->
+                                <div class="weatherInfoTitle">
+                                    Weather Condition
+                                </div>
+                                <!--Weather Condition Value-->
+                                <div class="weatherInfoValue">
+                                    <div class="weatherConditionContainer">
+                                        <div class="weatherCondition">
+                                            #{weatherInformation.weatherCondition}
+                                        </div>
+                                        <div class="description" >
+                                            #{weatherInformation.description}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Weather Temperature Information-->
+                        <div class="weatherInfoComponent">
+                            <div class="weatherInfoBox">
+                                <!--Weather Temperature Title-->
+                                <div class="weatherInfoTitle">
+                                    Weather Temperature
+                                </div>
+                                <!--Weather Temperature Value-->
+                                <div class="weatherInfoValue">
+                                    #{weatherInformation.fahrenheitTemperature} &#8457;
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Weather Wind Speed Information-->
+                        <div class="weatherInfoComponent">
+                            <div class="weatherInfoBox">
+                                <!--Weather Wind Speed Title-->
+                                <div class="weatherInfoTitle">
+                                    Weather Wind Speed
+                                </div>
+                                <!--Weather Wind Speed Value-->
+                                <div class="weatherInfoValue">
+                                    #{weatherInformation.windSpeed} m/h
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Weather Humidity Information-->
+                        <div class="weatherInfoComponent">
+                            <div class="weatherInfoBox">
+                                <!--Weather Humidity Title-->
+                                <div class="weatherInfoTitle">
+                                    Weather Humidity
+                                </div>
+                                <!--Weather Humidity Value-->
+                                <div class="weatherInfoValue">
+                                    #{weatherInformation.humidity} %
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Weather Pressure Information-->
+                        <div class="weatherInfoComponent">
+                            <div class="weatherInfoBox">
+                                <!--Weather Pressure Title-->
+                                <div class="weatherInfoTitle">
+                                    Weather Pressure
+                                </div>
+                                <!--Weather Pressure Value-->
+                                <div class="weatherInfoValue">
+                                    #{weatherInformation.pressure} Hpa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Weather System Controller Container-->
+                <div class="windowSystemControllerContainer">
+                    <!--System Controller Container Title-->
+                    <div class="Title">
+                        &nbsp;&nbsp;&nbsp;<i class="material-icons">touch_app</i> &nbsp;&nbsp;&nbsp;Window System Controller
+                    </div>
+                    <!--Content-->
+                    <div class="windowSystemControllerContent">
+                        <div class="controllerMainContent">
+                            <!--Automatic Mode-->
+                            <div class="controllerMode">
+                                <!--Title-->
+                                <div class="controllerModeTitle">
+                                    Automatic Mode
+                                </div>
+                                <!--Content-->
+                                <div class="controllerContent">
+                                    <div class="controllerButtonBox">
+                                        <h:commandButton id="automaticButton" styleClass="controllerButton" value=" Automatic Mode: ON" action="#{houseWindowSystemController.setAutomaticWindowMode()}">
+                                            <f:ajax render="mainform" />
+                                        </h:commandButton>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Manual Mode-->
+                            <div class="controllerMode">
+                                <!--Title-->
+                                <div class="controllerModeTitle">
+                                    Manual Mode
+                                </div>
+                                <!--Content-->
+                                <div class="controllerContent">
+                                    <div class="controllerButtonBox">
+                                        <h:commandButton  styleClass="controllerButton" value=" Close 100%" action="#{houseWindowSystemController.setWindowManualModeCLOSE_100()}">
+                                        <f:ajax render="mainform" />
+                                        </h:commandButton>
+                                    </div>
+                                    <div class="controllerButtonBox">
+                                        <h:commandButton  styleClass="controllerButton" value="Close  75%" action="#{houseWindowSystemController.setWindowManualModeCLOSE_75()}">
+                                        <f:ajax render="mainform" />
+                                        </h:commandButton>
+                                    </div>
+                                    <div class="controllerButtonBox">
+                                        <h:commandButton  styleClass="controllerButton" value=" Close  50%" action="#{houseWindowSystemController.setWindowManualModeCLOSE_50()}">
+                                        <f:ajax render="mainform" />
+                                        </h:commandButton>
+                                    </div>
+                                    <div class="controllerButtonBox">
+                                        <h:commandButton  styleClass="controllerButton" value="Close  25%" action="#{houseWindowSystemController.setWindowManualModeCLOSE_25()}">
+                                        <f:ajax render="mainform" />
+                                        </h:commandButton>
+                                    </div>
+                                    <div class="controllerButtonBox">
+                                        <h:commandButton  styleClass="controllerButton" value="Close   0%" action="#{houseWindowSystemController.setWindowManualModeCLOSE_0()}">
+                                        <f:ajax render="mainform" />
+                                        </h:commandButton>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Display a House model -->
+                <div class="windowSystemModelDisplayContainer">
+                    <div class="Title">
+                        &nbsp;&nbsp;&nbsp;<i class="material-icons">3d_rotation</i> &nbsp;&nbsp;&nbsp;Window System Model Display
+                    </div>
+                    <div class="windowSystemModelDisplayContent">
+                        <h:graphicImage styleClass="windowSystemModelDisplayContentImg" value="#{houseWindowSystemController.houseWindowModelDisplayURL}" ></h:graphicImage>
+                    </div>
+                </div>
+
+                <!--Window System Information Log Container-->
+                <div  class="windowSystemInfoLog">
+                    <!--Log Container Title-->
+                    <div class="Title">
+                        &nbsp;&nbsp;&nbsp;<i class="material-icons">note</i> &nbsp;&nbsp;&nbsp;Window System Information Log
+                    </div>
+                    <div  class="windowSystemInfoLogContent">
+                        <ui:repeat  var="log" value="#{houseWindowSystemController.houseWindowSystemList}">
+                            <div class="product-item">
+                                <div class="product-text">
+                                    #{log.recordDatetime} &nbsp; #{log.status}
+                                </div>
+                            </div>
+                        </ui:repeat>
+                    </div>
+                </div>
+            </div>
+        </h:form>
+    </h:body>
+</html>
+

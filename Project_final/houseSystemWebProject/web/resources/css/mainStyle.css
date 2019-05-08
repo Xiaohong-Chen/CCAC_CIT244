@@ -1,0 +1,199 @@
+body{
+    background-image: url("images/background_3.jpg");
+    text-align: center;
+}
+
+.houseSystem{
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px ;
+    display: grid;
+    grid-template-columns:20% 20% 30% 30%;
+    grid-template-rows:40% 60%;
+    grid-gap:10px;
+}
+
+.userInformation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userInformation_name{
+    color: rgba(255,255,255,0.7);
+    font-size: 30px;
+}
+
+
+.houseSystemItemMenuContainer{
+    background-color: rgba(0,0,0,0.5);
+    grid-row:1/3;
+}
+.Title{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+.houseSystemItemButton{
+    height: 50px;
+    border-style: none;
+    margin-top: 2px;
+    background-color: rgba(0,0,0,0.3);
+    color:white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.userInformation{
+    width: 100%;
+    height: 400px;
+}
+
+
+
+.weatherInfoContainer{
+    background-color: rgba(0,0,0,0.5);
+    display: grid;
+    grid-template-rows:auto auto;
+    grid-column:2/5;
+}
+.weatherInfoContent{
+    height: 300px;
+    display: grid;
+    grid-template-columns:20% 20% 20% 20% 20%;
+}
+.weatherInfoComponent{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.weatherInfoBox{
+    width:75%;
+    height: 70%;
+    display: grid;
+    grid-template-rows:19% 80%;
+    grid-gap:1%;
+}
+.weatherInfoTitle{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(50,50,50,0.5);
+    color: rgba(255,255,255,0.7);
+    border-radius: 10px 10px 0px 0px;
+    border-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+.weatherInfoValue{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(50,50,50,0.5);
+    color: rgba(255,255,255,0.7);
+    font-size: 40px;
+    border-radius: 0px 0px 10px 10px;
+    border-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+.weatherConditionContainer{
+    width: 100%;
+    display: grid;
+    grid-template-rows:auto auto;
+}
+.weatherCondition{
+    width: 100%;
+}
+.description{
+    font-size: 20px;
+    width: 100%;
+}
+
+
+
+.windowSystemControllerContainer{
+    background-color: rgba(0,0,0,0.5);
+}
+.windowSystemControllerContent{
+
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controllerMainContent{
+    display: grid;
+    grid-template-rows:30% 70%;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+.controllerMode{
+    width:300px;
+}
+.controllerModeTitle{
+    display: flex;
+    align-items: center;
+    color:white;
+    height: 25px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.controllerButtonBox{
+    padding-top: 10px;
+}
+.controllerButton{
+    background-color: rgba(0,0,0,0.5);
+    border:solid;
+    border-color: white;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+
+.windowSystemModelDisplayContainer{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.windowSystemModelDisplayContent{
+     background-color: rgba(0,0,0,0.3);
+}
+.windowSystemModelDisplayContentImg{
+    height: 500px;
+}
+
+.windowSystemInfoLog{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.windowSystemInfoLogTitle{
+    display: flex;
+    align-items: center;
+    color:white;
+    height: 50px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.windowSystemInfoLogContent{
+    background-color: rgba(0,0,0,0.5);
+    overflow-y: scroll;
+    height: 500px;
+    color:white;
+}
+.product-text{
+    display: flex;
+}
